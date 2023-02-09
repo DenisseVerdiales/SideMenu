@@ -17,7 +17,8 @@
 		020CC9A0298C4ECB00DDAFD1 /* SideMenuUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 020CC99F298C4ECB00DDAFD1 /* SideMenuUITestsLaunchTests.swift */; };
 		020CC9AE298C509200DDAFD1 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 020CC9AD298C509200DDAFD1 /* MenuViewController.swift */; };
 		020CC9B0298C509D00DDAFD1 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 020CC9AF298C509D00DDAFD1 /* HomeViewController.swift */; };
-		020CC9B2298C847800DDAFD1 /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 020CC9B1298C847800DDAFD1 /* InfoViewController.swift */; };
+		020CC9B2298C847800DDAFD1 /* CoreBluetoothViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 020CC9B1298C847800DDAFD1 /* CoreBluetoothViewController.swift */; };
+		020CC9B52990437F00DDAFD1 /* ParticlePeripheral.swift in Sources */ = {isa = PBXBuildFile; fileRef = 020CC9B42990437F00DDAFD1 /* ParticlePeripheral.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,7 +53,8 @@
 		020CC99F298C4ECB00DDAFD1 /* SideMenuUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		020CC9AD298C509200DDAFD1 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		020CC9AF298C509D00DDAFD1 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
-		020CC9B1298C847800DDAFD1 /* InfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
+		020CC9B1298C847800DDAFD1 /* CoreBluetoothViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreBluetoothViewController.swift; sourceTree = "<group>"; };
+		020CC9B42990437F00DDAFD1 /* ParticlePeripheral.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParticlePeripheral.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 		020CC97B298C4EC900DDAFD1 /* SideMenu */ = {
 			isa = PBXGroup;
 			children = (
+				020CC9B32990434900DDAFD1 /* Model */,
 				020CC9AC298C506500DDAFD1 /* ViewController */,
 				020CC97C298C4EC900DDAFD1 /* AppDelegate.swift */,
 				020CC97E298C4EC900DDAFD1 /* SceneDelegate.swift */,
@@ -136,9 +139,17 @@
 				020CC980298C4EC900DDAFD1 /* ContainerViewController.swift */,
 				020CC9AD298C509200DDAFD1 /* MenuViewController.swift */,
 				020CC9AF298C509D00DDAFD1 /* HomeViewController.swift */,
-				020CC9B1298C847800DDAFD1 /* InfoViewController.swift */,
+				020CC9B1298C847800DDAFD1 /* CoreBluetoothViewController.swift */,
 			);
 			path = ViewController;
+			sourceTree = "<group>";
+		};
+		020CC9B32990434900DDAFD1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				020CC9B42990437F00DDAFD1 /* ParticlePeripheral.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -274,8 +285,9 @@
 				020CC9B0298C509D00DDAFD1 /* HomeViewController.swift in Sources */,
 				020CC981298C4EC900DDAFD1 /* ContainerViewController.swift in Sources */,
 				020CC97D298C4EC900DDAFD1 /* AppDelegate.swift in Sources */,
+				020CC9B52990437F00DDAFD1 /* ParticlePeripheral.swift in Sources */,
 				020CC97F298C4EC900DDAFD1 /* SceneDelegate.swift in Sources */,
-				020CC9B2298C847800DDAFD1 /* InfoViewController.swift in Sources */,
+				020CC9B2298C847800DDAFD1 /* CoreBluetoothViewController.swift in Sources */,
 				020CC9AE298C509200DDAFD1 /* MenuViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -443,6 +455,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = GGH4H4Q73N;
@@ -457,8 +470,9 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.cynthia.verdiales.apple.demo.SideMenu;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cynthia.verdiales.apple.SideMenu;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -470,6 +484,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = GGH4H4Q73N;
@@ -484,8 +499,9 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.cynthia.verdiales.apple.demo.SideMenu;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cynthia.verdiales.apple.SideMenu;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

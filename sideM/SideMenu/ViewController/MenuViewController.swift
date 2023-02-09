@@ -17,7 +17,7 @@ class MenuViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     enum MenuOptions: String, CaseIterable {
         case home = "Home"
-        case info = "Information"
+        case info = "Core Bluetooth"
         case appRating = "App Rating"
         case shareApp = "Share App"
         case settings = "Settings"

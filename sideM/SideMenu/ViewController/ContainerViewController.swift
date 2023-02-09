@@ -21,7 +21,7 @@ class ContainerViewController: UIViewController {
     let menuVC = MenuViewController()
     let homeVC = HomeViewController()
     var navVC: UINavigationController?
-    lazy var infoVC = InfoViewController()
+    lazy var coreVC = CoreBluetoothViewController()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -92,7 +92,7 @@ extension ContainerViewController: MenuViewControllerDelegate {
     }
     
     func addInfo() {
-        let vc = infoVC
+        let vc = coreVC
         homeVC.addChild(vc)
         homeVC.view.addSubview(vc.view)
         vc.view.frame = view.frame
@@ -101,8 +101,8 @@ extension ContainerViewController: MenuViewControllerDelegate {
     }
     
     func resetToHome() {
-        infoVC.view.removeFromSuperview()
-        infoVC.didMove(toParent: nil)
+        coreVC.view.removeFromSuperview()
+        coreVC.didMove(toParent: nil)
         homeVC.title = "Home"
     }
 }
