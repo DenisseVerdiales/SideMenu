@@ -22,6 +22,7 @@ class ContainerViewController: UIViewController {
     let homeVC = HomeViewController()
     var navVC: UINavigationController?
     lazy var coreVC = CoreBluetoothViewController()
+    lazy var cameraVC = CameraViewController()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -80,10 +81,10 @@ extension ContainerViewController: MenuViewControllerDelegate {
         switch menuItem {
         case .home:
             resetToHome()
-        case .info:
-            addInfo()
-        case .appRating:
-            break
+        case .core:
+            addCore()
+        case .camera:
+            addCamera()
         case .shareApp:
             break
         case .settings:
@@ -91,8 +92,17 @@ extension ContainerViewController: MenuViewControllerDelegate {
         }
     }
     
-    func addInfo() {
+    func addCore() {
         let vc = coreVC
+        homeVC.addChild(vc)
+        homeVC.view.addSubview(vc.view)
+        vc.view.frame = view.frame
+        vc.didMove(toParent: homeVC)
+        homeVC.title = vc.title
+    }
+    
+    func addCamera() {
+        let vc = cameraVC
         homeVC.addChild(vc)
         homeVC.view.addSubview(vc.view)
         vc.view.frame = view.frame
@@ -103,6 +113,10 @@ extension ContainerViewController: MenuViewControllerDelegate {
     func resetToHome() {
         coreVC.view.removeFromSuperview()
         coreVC.didMove(toParent: nil)
+        
+        cameraVC.view.removeFromSuperview()
+        cameraVC.didMove(toParent: nil)
+        
         homeVC.title = "Home"
     }
 }

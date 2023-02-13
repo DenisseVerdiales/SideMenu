@@ -19,6 +19,8 @@
 		020CC9B0298C509D00DDAFD1 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 020CC9AF298C509D00DDAFD1 /* HomeViewController.swift */; };
 		020CC9B2298C847800DDAFD1 /* CoreBluetoothViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 020CC9B1298C847800DDAFD1 /* CoreBluetoothViewController.swift */; };
 		020CC9B52990437F00DDAFD1 /* ParticlePeripheral.swift in Sources */ = {isa = PBXBuildFile; fileRef = 020CC9B42990437F00DDAFD1 /* ParticlePeripheral.swift */; };
+		02C942E429998C4D00A37523 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C942E329998C4D00A37523 /* CameraViewController.swift */; };
+		02C942E629999A4800A37523 /* CapturedImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C942E529999A4800A37523 /* CapturedImageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +57,8 @@
 		020CC9AF298C509D00DDAFD1 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		020CC9B1298C847800DDAFD1 /* CoreBluetoothViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreBluetoothViewController.swift; sourceTree = "<group>"; };
 		020CC9B42990437F00DDAFD1 /* ParticlePeripheral.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParticlePeripheral.swift; sourceTree = "<group>"; };
+		02C942E329998C4D00A37523 /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
+		02C942E529999A4800A37523 /* CapturedImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CapturedImageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,10 +140,10 @@
 		020CC9AC298C506500DDAFD1 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				020CC980298C4EC900DDAFD1 /* ContainerViewController.swift */,
-				020CC9AD298C509200DDAFD1 /* MenuViewController.swift */,
+				02C942E2299988C800A37523 /* AVFoundationCamera */,
+				02C942E1299988B300A37523 /* CoreBluetooth */,
+				02C942E02999887900A37523 /* Menu */,
 				020CC9AF298C509D00DDAFD1 /* HomeViewController.swift */,
-				020CC9B1298C847800DDAFD1 /* CoreBluetoothViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -150,6 +154,32 @@
 				020CC9B42990437F00DDAFD1 /* ParticlePeripheral.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		02C942E02999887900A37523 /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				020CC9AD298C509200DDAFD1 /* MenuViewController.swift */,
+				020CC980298C4EC900DDAFD1 /* ContainerViewController.swift */,
+			);
+			path = Menu;
+			sourceTree = "<group>";
+		};
+		02C942E1299988B300A37523 /* CoreBluetooth */ = {
+			isa = PBXGroup;
+			children = (
+				020CC9B1298C847800DDAFD1 /* CoreBluetoothViewController.swift */,
+			);
+			path = CoreBluetooth;
+			sourceTree = "<group>";
+		};
+		02C942E2299988C800A37523 /* AVFoundationCamera */ = {
+			isa = PBXGroup;
+			children = (
+				02C942E329998C4D00A37523 /* CameraViewController.swift */,
+				02C942E529999A4800A37523 /* CapturedImageView.swift */,
+			);
+			name = AVFoundationCamera;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -287,6 +317,8 @@
 				020CC97D298C4EC900DDAFD1 /* AppDelegate.swift in Sources */,
 				020CC9B52990437F00DDAFD1 /* ParticlePeripheral.swift in Sources */,
 				020CC97F298C4EC900DDAFD1 /* SceneDelegate.swift in Sources */,
+				02C942E429998C4D00A37523 /* CameraViewController.swift in Sources */,
+				02C942E629999A4800A37523 /* CapturedImageView.swift in Sources */,
 				020CC9B2298C847800DDAFD1 /* CoreBluetoothViewController.swift in Sources */,
 				020CC9AE298C509200DDAFD1 /* MenuViewController.swift in Sources */,
 			);
